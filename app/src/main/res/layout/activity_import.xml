@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_green_dark"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtData"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@android:color/background_light"
+        android:gravity="top|left"
+        android:hint="edit Text"
+        android:textSize="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/btnWriteSDFile"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnWriteSDFile"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="1. Write SD File"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/btnClearScreen"
+        android:layout_alignLeft="@+id/txtData"
+        android:layout_alignStart="@+id/txtData" />
+
+    <Button
+        android:id="@+id/btnClearScreen"
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="2. Clear Screen"
+        android:layout_above="@+id/btnReadSDFile"
+        android:layout_alignLeft="@+id/btnReadSDFile"
+        android:layout_alignStart="@+id/btnReadSDFile"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/btnReadSDFile"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="3. Read SD File"
+        android:layout_above="@+id/btnClose"
+        android:layout_alignRight="@+id/btnWriteSDFile"
+        android:layout_alignEnd="@+id/btnWriteSDFile" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/holo_red_light"
+        android:text="4. Close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnClearScreen"
+        android:layout_alignStart="@+id/btnClearScreen" />
+
+    <Button
+        android:id="@+id/btnspk"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:text="Speak"
+        android:layout_above="@+id/btnClearScreen"
+        android:layout_alignRight="@+id/txtData"
+        android:layout_alignEnd="@+id/txtData"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_alignEnd="@+id/btnspk"
+        android:layout_alignRight="@+id/btnspk"
+        android:layout_below="@+id/btnWriteSDFile"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Stop" />
+
+</RelativeLayout>

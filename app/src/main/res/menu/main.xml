@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/darkmenu"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="dark"/>
+        <item
+            android:id="@+id/brightmenu"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            android:title="bright"
+            />
+        <item
+            android:id="@+id/greymenu"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            android:title="grey"
+            />
+
+    </group>
+</menu>
